@@ -16,7 +16,10 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-            <iframe src="http://www.business-geografic.com" style="width:100%; height:100%;">
+            <!-- http://stackoverflow.com/questions/25861954/using-iframe-in-phonegap-app -->
+            <div id="content" style="height: auto; width: auto; overflow: auto; -webkit-overflow-scrolling:touch;">
+                <iframe src="http://www.business-geografic.com" height="100%" scrolling="no" width="100% "></iframe>
+            </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
