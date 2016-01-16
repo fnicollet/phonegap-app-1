@@ -17,6 +17,8 @@
     </author>
     <!-- http://stackoverflow.com/questions/14862948/phonegap-iframe-page-scaling -->
     <preference name="EnableViewportScale" value="true" />
+    <!-- http://community.phonegap.com/nitobi/topics/app-scaling-in-ios9 -->
+    <preference name="UIWebViewBounce" value="false" />
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -28,7 +30,7 @@
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
@@ -91,6 +93,10 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    <!-- http://community.phonegap.com/nitobi/topics/app-scaling-in-ios9 -->
+    <gap:splash src="res/screens/ios/Default-667h@2x.png"               gap:platform="ios"     width="750" height="1334" />
+    <gap:splash src="res/screens/ios/Default-Portrait-736h@3x.png"      gap:platform="ios"     width="1242" height="2208" />
+    <gap:splash src="res/screens/ios/Default-Landscape-736h@3x.png"     gap:platform="ios"     width="2208" height="1242" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
