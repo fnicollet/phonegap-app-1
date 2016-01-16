@@ -7,19 +7,20 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title></title>
+        <style type="text/css">
+            html, body{
+              width: 100%;
+              height: 100%;
+              padding: 0;
+              margin: 0;
+              overflow:hidden;
+            }
+        </style>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-            <!-- http://stackoverflow.com/questions/25861954/using-iframe-in-phonegap-app -->
-            <div id="content" style="height: auto; width: auto; overflow: auto; -webkit-overflow-scrolling:touch;">
-                <iframe src="http://www.business-geografic.com" height="100%" scrolling="no" width="100% "></iframe>
-            </div>
+        <div id="content" style="height: 100%; width: auto; overflow: auto; -webkit-overflow-scrolling:touch;">
+            <iframe src="https://dev.windows.com/en-us/overview" height="100%" scrolling="no" width="100% " frameborder="0"></iframe>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
