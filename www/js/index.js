@@ -12,10 +12,5 @@ var app = {
         app.receivedEvent('deviceready');
         // Ignore back button in android
         // document.addEventListener('backbutton', function() {}, false);
-        var loading = document.getElementById("loading");
-        loading.style.display = 'none';
-        var iframeComponent = document.getElementById("iframeComponent");
-        iframeComponent.style.display = '';
-        
     }
 };
