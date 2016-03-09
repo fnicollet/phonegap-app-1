@@ -10,6 +10,8 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        // http://docs.phonegap.com/en/2.5.0/cordova_splashscreen_splashscreen.md.html#hide
+        navigator.splashscreen.hide();
         // Ignore back button in android
         // document.addEventListener('backbutton', function() {}, false);
     }
