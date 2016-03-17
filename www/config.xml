@@ -106,6 +106,15 @@
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>101</string>
     </gap:config-file>
+    
+    <gap:config-file platform="winphone" parent="/Deployment" mode="replace">
+        <Languages xmlns="">
+                <Language code="fr-FR"/>
+                <Language code="en-US"/>
+                <Language code="nl-NL"/>
+            </Languages>
+            <DefaultLanguage xmlns="" code="fr-FR" />
+        </gap:config-file>
 
     <!--
         Define access to external domains.
