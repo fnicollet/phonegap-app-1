@@ -14,14 +14,17 @@ var app = {
         navigator.splashscreen.hide();
         // Ignore back button in android
         // document.addEventListener('backbutton', function() {}, false);
-         alert("TEST");
+         document.getElementById("debugDiv").innerHTML = "TEST";
         window.addEventListener("message", function(event) {
-		    alert("MESSAGE");
+        	document.getElementById("debugDiv").innerHTML = "on message";
+		    
 			var data = event.data;
 			var action = data.action;
+			document.getElementById("debugDiv").innerHTML += action;
 			if(action == "LINK") {
 				var parameters = data.parameters;
 				var href = parameters[0];
+				document.getElementById("debugDiv").innerHTML += href;
 				window.open(href, "_system");
 			}
 		}, false);
