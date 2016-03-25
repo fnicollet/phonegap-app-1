@@ -14,6 +14,7 @@ var app = {
         navigator.splashscreen.hide();
         // Ignore back button in android
         // document.addEventListener('backbutton', function() {}, false);
+         alert("TEST");
         window.addEventListener("message", function(event) {
 		    alert("MESSAGE");
 			var data = event.data;
@@ -23,6 +24,6 @@ var app = {
 				var href = parameters[0];
 				window.open(href, "_system");
 			}
-		});
+		}, false);
     }
 };
