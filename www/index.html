@@ -56,6 +56,13 @@
          -->
          <script type="text/javascript">
          document.addEventListener('deviceready', function() {
+             navigator.notification.alert(
+                'This is Alert',  
+                function(){},  
+                'Alert', 
+                'ok'   
+        );
+
              document.getElementById("debugDiv").innerText = "readdyyyy";
              alert("ready");
          });
