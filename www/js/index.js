@@ -9,17 +9,12 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-    	document.getElementById("debugDiv").innerText = "onDeviceReady";
-            window.addEventListener("message", function(event) {
-	document.getElementById("debugDiv").innerText = "on message";
-	    
+        window.addEventListener("message", function(event) {
 		var data = event.data;
 		var action = data.action;
-		document.getElementById("debugDiv").innerText += action;
 		if(action == "LINK") {
 			var parameters = data.parameters;
 			var href = parameters[0];
-			document.getElementById("debugDiv").innerText += href;
 			window.open(href, "_system");
 		}
 	}, false);
@@ -29,7 +24,6 @@ var app = {
         navigator.splashscreen.hide();
         // Ignore back button in android
         // document.addEventListener('backbutton', function() {}, false);
-         document.getElementById("debugDiv").innerText = "TEST";
 
     }
 };
